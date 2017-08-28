@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="GameObjects.Boat"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameObjects"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="210" x:Name="root">
+    <Canvas>
+        <Image>
+            <Image.Source>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="#FF363A3A" Geometry="M 0,92 C 6,123 15,138 24,150 L 124,150 L 140,113 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF421F7E" Geometry="M 21,95 L 120,110 L 122,95 L 23,81 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF54C2EC" Geometry="M 33,82 L 112,93 L 113,84 L 34,72 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FFCB005C" Geometry="M 54,75 L 69,77 L 72,52 L 57,50 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FFCB005C" Geometry="M 79,79 L 93,81 L 97,56 L 82,54 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="LightBlue">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="2"></Pen>
+                                </GeometryDrawing.Pen>
+                                <GeometryDrawing.Geometry>
+                                    <GeometryGroup>
+                                        <EllipseGeometry RadiusX="5" RadiusY="5" Center="15,106"></EllipseGeometry>
+                                        <EllipseGeometry RadiusX="4.5" RadiusY="4.5" Center="32,108"></EllipseGeometry>
+                                        <EllipseGeometry RadiusX="4" RadiusY="4" Center="50,111"></EllipseGeometry>
+                                        <EllipseGeometry RadiusX="3.5" RadiusY="3.5" Center="67,113"></EllipseGeometry>
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="Gray" Geometry="M 82,42 
+                                             S 79,49 72,52 L57,50
+                                             A 15,15,0,0,1,52,26 
+                                             A 15,15,0,0,1,71,9
+                                             A 15,15,0,0,1,97,5
+                                             A 15,15,0,0,1,122,9
+                                             A 15,15,0,0,1,146,15
+                                             A 15,15,0,0,1,166,30
+                                             A 17,17,0,0,1,180,35
+                                             A 37,37,0,0,0,210,48
+                                             A 30,30,0,0,1,184,52
+                                             A 38,38,0,0,1,159,52
+                                             A 20,15,0,0,1,133,53
+                                             A 18,15,0,0,1,108,55
+                                             A 7,7,0,0,1,97,56
+                                             L 82,54
+                                             A 6,6,0,0,1,79,46">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="2"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Image.Source>
+        </Image>
+    </Canvas>
+
+</UserControl>

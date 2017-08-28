@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="GameObjects.Explosion"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameObjects"
+             mc:Ignorable="d" 
+             d:DesignHeight="135" d:DesignWidth="136">
+    <Canvas>
+        <Image>
+            <Image.Source>
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Geometry="M 0,80 46,62 18,13 62,49 66,0 81,46 131,27 93,61 136,104 91,79 97,116 77,83 66,135 62,87 33,120 49,79  Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="3"></Pen>
+                                </GeometryDrawing.Pen>
+                                <GeometryDrawing.Brush>
+                                    <RadialGradientBrush>
+                                        <GradientStop Offset="0" Color="#FFF9EF15"></GradientStop>
+                                        <GradientStop Offset="1" Color="#FFC50000"></GradientStop>
+                                    </RadialGradientBrush>
+                                </GeometryDrawing.Brush>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Image.Source>
+        </Image>
+    </Canvas>
+</UserControl>

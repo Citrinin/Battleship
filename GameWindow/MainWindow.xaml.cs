@@ -23,6 +23,25 @@ namespace GameWindow
         public MainWindow()
         {
             InitializeComponent();
+            periscopeGame.ClickBoat += PeriscopeGame_ClickBoat;
+            periscopeGame.ClickTorpedo += PeriscopeGame_ClickTorpedo;
+            this.KeyDown += MainWindow_KeyDown;
         }
+
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            periscopeGame.PeriscopeMove(e);
+        }
+
+        private void PeriscopeGame_ClickTorpedo(object sender, GameObjects.SpeedEventArg e)
+        {
+            tbSpeed.Text = $"Torpedo speed: x= {e.Speed:#.##}";
+        }
+
+        private void PeriscopeGame_ClickBoat(object sender, GameObjects.PositionEventArgs e)
+        {
+            tbPosttion.Text = $"Boat Position: x= {e.X}, y={e.Y}";
+        }
+        
     }
 }

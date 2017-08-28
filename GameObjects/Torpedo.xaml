@@ -1,0 +1,50 @@
+﻿<UserControl x:Class="GameObjects.Torpedo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameObjects"
+             mc:Ignorable="d" 
+             d:DesignHeight="77" d:DesignWidth="33" x:Name="root">
+    <Canvas>
+        <Image>
+            <Image.Source >
+                <DrawingImage>
+                    <DrawingImage.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="#FF363A3A" Geometry="M 7,55 2,14
+                                             A 10,10,0,0,1,6,5
+                                             A 20,20,0,0,1,16,0
+                                             A 20,20,0,0,1,27,5
+                                             A 10,10,0,0,1,31,14
+                                             L 26,55
+                                             A 10,10,0,0,1,7,55 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="2"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF460000" Geometry="M 4,28 2,14
+                                             A 10,10,0,0,1,6,5
+                                             A 20,20,0,0,1,16,0
+                                             A 20,20,0,0,1,27,5
+                                             A 10,10,0,0,1,31,14
+                                             L 28,28
+                                             A 15,15,0,0,0,4,28 Z">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="2"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                            <GeometryDrawing Brush="#FF2B3800" Geometry="M 0,76 0,60 6,49 7,55
+                                             A 12,12,0,0,0,10,59 Z
+                                             M27,49 33,60 33,76 23,59 A 12,12,0,0,0,26,55 Z M16,52 16,76">
+                                <GeometryDrawing.Pen>
+                                    <Pen Brush="Black" Thickness="2"></Pen>
+                                </GeometryDrawing.Pen>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingImage.Drawing>
+                </DrawingImage>
+            </Image.Source>
+        </Image>
+    </Canvas>
+</UserControl>
